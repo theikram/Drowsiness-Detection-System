@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>How It Works</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="/static/assets/css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="/static/assets/images/fevicon.png" type="image/gif" />
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* Custom styles for the Understanding Drowsiness page */
+        .heading1 {
+    background: linear-gradient(135deg, #FFC2B3, #FF8A66); /* Updated gradient background with darker colors */
+    color: #333; /* Text color */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    text-align: center; /* Center align heading */
+}
+
+
+        .causes-text {
+            background-color: #f0f0f0; /* Light gray background */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+        }
+
+        .bullet-points {
+            margin-left: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .bullet-points li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc; /* Thin line between bullet points */
+            padding-bottom: 15px;
+        }
+
+        .bullet-points li:last-child {
+            border-bottom: none; /* Remove border for the last bullet point */
+        }
+
+        .bullet-points li strong {
+            font-style: italic; /* Italicized heading */
+        }
+
+        .bullet-points li p {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body class="main-layout inner_page">
+<!-- header -->
+<div class="header">
+    <div class="container-fluid">
+        <div class="row d_flex">
+            <div class=" col-md-2 col-sm-3 col logo_section">
+                <div class="full">
+                    <div class="center-desk">
+                        <div>
+                            <a href="/"><img src="/static/assets/images/Drowsiness_Logo.png"  class="logo" alt="#" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/detect">Detect Drowsiness</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/understanding">Understanding Drowsiness</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/levels">Levels Of Drowsiness</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/how">How it works</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-2">
+                <ul class="email text_align_right">
+                    <!-- <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li> -->
+                    <li class="d_none"> <a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end header inner -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading1">
+                <h2>How it Works</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="causes-text">
+                <ul class="bullet-points">
+                    <li>
+                        <strong>Web Framework: Flask:</strong>
+                        <p>Flask is a lightweight web framework for Python that is used to create the web interface for this project. Flask is chosen for its simplicity and flexibility, making it easy to integrate with other Python libraries and modules.</p>
+                        <p>Flask handles the backend operations, including routing, HTTP requests, and serving the web pages.</p>
+                    </li>
+                    <li>
+                        <strong>Frontend Technologies: HTML, CSS, JavaScript:</strong>
+                        <p>HTML (HyperText Markup Language) is used to structure the content of the web pages.</p>
+                        <p>CSS (Cascading Style Sheets) is employed to style the web pages, ensuring they are visually appealing and user-friendly.</p>
+                        <p>JavaScript is utilized to add interactive elements to the web pages, such as the button to start the drowsiness detection process and to handle the webcam functionality.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading1">
+                <h2>Programming Languages</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="causes-text">
+                <ul class="bullet-points">
+                    <li>
+                        <strong>Python:</strong>
+                        <p>Python is the primary programming language used in this project due to its versatility and the extensive availability of libraries for computer vision and machine learning.</p>
+                        <p>Python scripts are responsible for processing video streams, detecting drowsiness, and integrating with the Flask web framework.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading1">
+                <h2>Libraries and Modules</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="causes-text">
+                <ul class="bullet-points">
+                    <li>
+                        <strong>OpenCV:</strong>
+                        <p>OpenCV (Open Source Computer Vision Library) is a powerful library used for real-time computer vision tasks. In this project, OpenCV handles video capture from the webcam, image processing, and feature extraction.</p>
+                        <p>Key functionalities include reading video frames, converting images to grayscale, and applying filters to enhance image quality.</p>
+                    </li>
+                    <li>
+                        <strong>Dlib:</strong>
+                        <p>Dlib is a machine learning library that provides tools for image processing, particularly facial landmark detection. It is used to locate and track facial features such as the eyes, nose, and mouth.</p>
+                        <p>Dlib’s pre-trained models are employed to detect and analyze the eye aspect ratio (EAR), which is crucial for identifying drowsiness.</p>
+                    </li>
+                    <li>
+                        <strong>Imutils:</strong>
+                        <p>Imutils is a library that simplifies common image processing tasks, making it easier to handle image transformations and display images.</p>
+                        <p>In this project, Imutils is used to streamline the processing of video frames and assist with the display of results.</p>
+                    </li>
+                    <li>
+                        <strong>Numpy:</strong>
+                        <p>Numpy is a fundamental package for scientific computing with Python. It supports large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays.</p>
+                        <p>Numpy is used in this project for numerical operations and to efficiently handle pixel data from video frames.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading1">
+                <h2>System Workflow</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="causes-text">
+                <ul class="bullet-points">
+                    <li>
+                        <strong>Video Capture:</strong>
+                        <p>The system captures video input from the user’s webcam. Both integrated laptop cameras and external USB webcams are supported to ensure flexibility.</p>
+                        <p>Flask routes the video stream to the backend where OpenCV processes the frames in real-time.</p>
+                    </li>
+                    <li>
+                        <strong>Face and Eye Detection:</strong>
+                        <p>Using Dlib’s facial landmark detection, the system identifies key facial features. The specific landmarks around the eyes are used to calculate the eye aspect ratio (EAR).</p>
+                        <p>OpenCV’s Haar cascades can also be used as an alternative or complementary method for detecting faces and eyes.</p>
+                    </li>
+                    <li>
+                        <strong>Drowsiness Detection Algorithm:</strong>
+                        <p>The EAR is continuously monitored to determine if the eyes are closed for a prolonged period, which is indicative of drowsiness.</p>
+                        <p>The system sets thresholds and time frames to accurately detect drowsiness while minimizing false positives.</p>
+                    </li>
+                    <li>
+                        <strong>Alert Mechanism:</strong>
+                        <p>If drowsiness is detected, the system triggers an alert. This can include visual warnings on the web interface and audio alarms to immediately wake the driver.</p>
+                        <p>The alert mechanism ensures that the driver is promptly notified to take necessary actions, such as taking a break or stopping the vehicle.</p>
+                    </li>
+                    <li>
+                        <strong>Web Interface:</strong>
+                        <p>The web interface, built with Flask, HTML, CSS, and JavaScript, allows users to interact with the system easily. Users can start the drowsiness detection process with a simple click and receive feedback directly on the web page.</p>
+                        <p>The interface also provides educational content about drowsiness, including its causes, symptoms, and prevention methods.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading1">
+                <h2>Additional Functionalities</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="causes-text">
+                <ul class="bullet-points">
+                    <li>
+                        <strong>Use of External Cameras:</strong>
+                        <p>The system is designed to support the use of external cameras, including smartphone cameras connected via USB. This adds versatility and allows users to choose the most convenient option for their setup.</p>
+                    </li>
+                    <li>
+                        <strong>Customizable Settings:</strong>
+                        <p>Users can customize alert thresholds and other settings to tailor the system to their specific needs and preferences.</p>
+                    </li>
+                    <li>
+                        <strong>Future Scalability:</strong>
+                        <p>The project is designed with scalability in mind, allowing for future enhancements and the addition of new features. This includes potential integration with other sensors or systems to further improve drowsiness detection accuracy.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading1">
+                <h2>Conclusion</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="causes-text">
+                <p>This project demonstrates the practical application of various technologies, programming languages, libraries, and modules to create an effective drowsiness detection system. By leveraging the power of computer vision and machine learning, the system aims to enhance road safety and provide a valuable tool for preventing accidents caused by driver fatigue.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(function (link) {
+            if (link.getAttribute('href') === page) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    });
+</script>

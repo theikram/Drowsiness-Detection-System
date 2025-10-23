@@ -1,0 +1,214 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <!-- basic -->
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <!-- mobile metas -->
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <!-- site metas -->
+            <title>Detect Drowsiness</title>
+            <meta name="keywords" content="" />
+            <meta name="description" content="" />
+            <meta name="author" content="" />
+            <!-- bootstrap css -->
+            <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css" />
+            <!-- style css -->
+            <link rel="stylesheet" href="/static/assets/css/style.css" />
+            <!-- Responsive -->
+            <link rel="stylesheet" href="/static/assets/css/responsive.css" />
+            <!-- fevicon -->
+            <link rel="icon" href="images/fevicon.png" type="image/gif" />
+            <!-- font-awesome -->
+            <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+            <style>
+              .custom-button {
+                background: linear-gradient(to right, #ffbeae, #ff8f6d);
+                color: #fff;
+                border: none;
+                border-radius: 50px;
+                padding: 20px 40px;
+                cursor: pointer;
+                font-size: 22px;
+                font-weight: bold;
+                text-transform: uppercase;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                opacity: 1;
+                transition: opacity 0.5s ease-in-out;
+              }
+              .custom-button img {
+                width: 40px;
+                height: 40px;
+                vertical-align: middle;
+                margin-right: 10px;
+              }
+              .button-container {
+                position: absolute;
+                top: 40%;
+                left: 65%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+              .hidden {
+                display: none;
+              }
+              .visible {
+                display: flex;
+                opacity: 1;
+              }
+        
+              /* Styling for the webcam container */
+              #webcam-container {
+                display: none;
+                position: relative;
+                width: 100%;
+                height: 480px;
+                background-color: #000;
+                margin-top: 20px;
+              }
+        
+              /* Styling for the video element */
+              #webcam-video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                background-color: #000;
+              }
+        
+              /* Styling for the status text */
+              #status {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+              }
+            </style>
+          </head>
+        
+          <body class="main-layout inner_page">
+            <div class="header">
+              <div class="container-fluid">
+                <div class="row d_flex">
+                  <div class="col-md-2 col-sm-3 col logo_section">
+                    <div class="full">
+                      <div class="center-desk">
+                        <div>
+                          <a href="/"><img src="/static/assets/images/Drowsiness_Logo.png" class="logo" alt="#" /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                      <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/detect">Detect Drowsiness</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/understanding">Understanding Drowsiness</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/levels">Levels Of Drowsiness</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/how">How it works</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                  <div class="col-md-2">
+                    <ul class="email text_align_right">
+                      <li class="d_none">
+                        <a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Drowsiness Detection -->
+            <div class="about">
+              <div class="container-fluid">
+                <div class="row d_flex">
+                  <div class="col-md-6">
+                    <div class="titlepage text_align_left">
+                      <div class="button-container">
+                        <button class="custom-button" onclick="showOptions()"><img src="/static/assets/images/start.png" alt="Start" /> Start</button>
+                        <div class="button-row hidden" id="cameraOptions">
+                          <button class="custom-button" onclick="startDrowsinessDetection('webcam')"><img src="/static/assets/images/Webcam.png" alt="Webcam" /> Run using Webcam</button>
+                          <button class="custom-button" onclick="startDrowsinessDetection('phone')"><img src="/static/assets/images/PhoneCamera.png" alt="Phone Cam" /> Run using Phone Cam</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about_img text_align_center">
+                      <figure>
+                        <img src="/static/assets/images/DD_Page.png" alt="#" style="width: 80%;" />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            
+        
+            <!-- Javascript files -->
+            <script src="/static/assets/js/jquery.min.js"></script>
+            <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+            <script src="/static/assets/js/jquery-3.0.0.min.js"></script>
+            <!-- sidebar -->
+            <script src="/static/assets/js/custom.js"></script>
+            <script>
+              function showOptions() {
+                var options = document.getElementById('cameraOptions');
+                options.classList.remove('hidden');
+                setTimeout(function () {
+                  options.classList.add('visible');
+                }, 10);
+              }
+        
+              function startDrowsinessDetection(cameraType) {
+                if (cameraType === 'webcam') {
+                  fetch('/start-detection/webcam', { method: 'POST' })
+            .then((response) => {
+              if (response.ok) {
+                console.log('Drowsiness detection started with phone cam');
+              } else {
+                console.error('Error starting drowsiness detection with phone cam');
+              }
+            })
+            .catch((error) => console.error('Error:', error));
+                 // Use the video feed route from Flask
+                 } else if (cameraType === 'phone') {
+          fetch('/start-detection/phone', { method: 'POST' })
+            .then((response) => {
+              if (response.ok) {
+                console.log('Drowsiness detection started with phone cam');
+              } else {
+                console.error('Error starting drowsiness detection with phone cam');
+              }
+            })
+            .catch((error) => console.error('Error:', error));
+        }
+              }
+            </script>
+          </body>
+        </html>
+        

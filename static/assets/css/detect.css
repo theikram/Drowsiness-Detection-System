@@ -1,0 +1,37 @@
+/* detect.css */
+
+/* Style for the webcam video container */
+#webcam-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  #webcam-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Status message style */
+  #status {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4d4d;
+    margin-top: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  button.custom-button {
+    margin-top: 20px;
+  }
+  

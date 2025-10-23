@@ -1,0 +1,10 @@
+opencv-python
+dlib
+imutils
+numpy
+pygame
+flask
+flask-socketio
+requests
+matplotlib
+pandas
