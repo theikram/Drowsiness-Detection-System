@@ -102,10 +102,10 @@ This project aims to **bring an affordable and accessible solution** using just 
           +----------+------------+
                      |
                      v
-          +-----------------------+
+          +----------------------------+
           |  Face & Landmark Detection |
           | (Using dlib predictor .dat)|
-          +----------+------------+
+          +----------+-----------------+
                      |
                      v
           +-----------------------+
